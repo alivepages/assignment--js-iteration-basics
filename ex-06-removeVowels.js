@@ -7,22 +7,24 @@
  *
 */
 
+function isVowel(letter) {
+  const VOWELS = 'aeiouáéíóú'
+  let lettterLower = letter.toLowerCase()
+  if (VOWELS.indexOf(lettterLower) >= 0) {
+    return true
+  }
+  return false;
+}
 
 function removeVowels(string) {
-  let result = '', cad = ''
+  let result = ''
   for (let i=0; i<string.length; i++) {
-    cad = string[i].toLowerCase();
-    if (
-      cad !== 'a'
-      && cad !== 'e'
-      && cad !== 'i'
-      && cad !== 'o'
-      && cad !== 'u'
-    ) {
-      result += string[i];
+    let letter = string[i]
+    if (!isVowel(letter)) {
+      result += string[i]
     }
   }
-  return result;
+  return result
 }
 
 
