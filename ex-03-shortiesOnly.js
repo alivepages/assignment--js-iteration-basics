@@ -8,13 +8,18 @@
  *
 */
 
-
-
-
-
-
-
-
+function shortiesOnly(arrayInput) {
+  let arrayResult = []
+  const MAX_LENGHT = 4
+  for (let i=0; i<arrayInput.length; i++) {
+    let word = arrayInput[i];
+    let wlength = word.length;
+    if (wlength <= MAX_LENGHT) {
+      arrayResult.push(word)
+    }
+  }
+  return arrayResult
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

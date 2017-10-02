@@ -8,8 +8,16 @@
  *
 */
 
-
-
+function simpOrSamp(arrayInput) {
+  for (let i=0; i<arrayInput.length; i++) {
+    if (arrayInput[i].length < 6) {
+      arrayInput[i] += ' Sampson';
+    } else {
+      arrayInput[i] += ' Simpson';
+    }
+  }
+  return arrayInput;
+}
 
 
 

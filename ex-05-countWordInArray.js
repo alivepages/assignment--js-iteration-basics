@@ -9,10 +9,15 @@
 **/
 
 
-
-
-
-
+function countWordInArray(search, arrayInput) {
+  let result = 0
+  for (let i=0; i<arrayInput.length; i++) {
+    if (arrayInput[i] === search) {
+      result ++;
+    }
+  }
+  return result;
+}
 
 
 

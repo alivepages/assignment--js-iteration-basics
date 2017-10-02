@@ -224,19 +224,19 @@ describe('makeAcronym()', function() {
   });
 
   it('should return "PDF" for "Portable Document Format"', function() {
-    return expect('Portable Document Format').to.equal('PDF');
+    return expect(makeAcronym('Portable Document Format')).to.equal('PDF');
   });
 
   it('should return "BRB" for "be right back"', function() {
-    return expect('be right back').to.equal('BRB');
+    return expect(makeAcronym('be right back')).to.equal('BRB');
   });
 
   it('should return "NBC" for "National Broadcasting Company"', function() {
-    return expect('National Broadcasting Company').to.equal('NBC');
+    return expect(makeAcronym('National Broadcasting Company')).to.equal('NBC');
   });
 
   it('should return "DOD" for "Department of Defense"', function() {
-    return expect('Department of Defense').to.equal('DOD');
+    return expect(makeAcronym('Department of Defense')).to.equal('DOD');
   });
 });
 

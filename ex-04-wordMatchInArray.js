@@ -9,7 +9,16 @@
 
 
 
-
+function wordMatchInArray(search, arrayInput) {
+  let result = false
+  for (let i=0; i<arrayInput.length; i++) {
+    if (arrayInput[i] === search) {
+      result = true;
+      break;
+    }
+  }
+  return result;
+}
 
 
 

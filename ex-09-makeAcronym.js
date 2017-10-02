@@ -8,6 +8,14 @@
 //  => 'PDF'
 
 
+function makeAcronym(string) {
+  let result = ''
+  let words = string.split(' ')
+  for (let i=0; i<words.length; i++) {
+    result += words[i][0].toUpperCase()
+  }
+  return result
+}
 
 
 

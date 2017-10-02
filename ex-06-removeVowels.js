@@ -8,7 +8,22 @@
 */
 
 
-
+function removeVowels(string) {
+  let result = '', cad = ''
+  for (let i=0; i<string.length; i++) {
+    cad = string[i].toLowerCase();
+    if (
+      cad !== 'a'
+      && cad !== 'e'
+      && cad !== 'i'
+      && cad !== 'o'
+      && cad !== 'u'
+    ) {
+      result += string[i];
+    }
+  }
+  return result;
+}
 
 
 

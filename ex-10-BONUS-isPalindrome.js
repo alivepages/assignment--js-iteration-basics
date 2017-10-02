@@ -10,7 +10,14 @@
 */
 
 
-
+function isPalindrome(string) {
+  let result = false;
+  let reverse = reverseString(string);
+  if (reverse === string) {
+    result = true;
+  }
+  return result
+}
 
 
 
